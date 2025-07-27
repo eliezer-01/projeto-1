@@ -14,6 +14,7 @@
   --cor-017: #444; /* Cinza escuro - Textos */
   --cor-018: #23232e; /* Azul marinho - Títulos*/
   --cor-019: #ccc; /* Cinza claro - Background pointer */
+  --cor-020: #3fdad2; /* card destaque */
   --font-001: Helvetica, Arial, sans-serif; /* Fonte padrão */
 }
 
@@ -229,7 +230,7 @@ footer .redes-sociais a {
   margin: 0 10px;
 }
 
-/* Contato */
+/* Index */
 .contato {
   background-color: var(--cor-012);
   padding: 10px;
@@ -248,6 +249,266 @@ footer .redes-sociais a {
   align-self: center;
   border: none;
 }
+
+/* Serviços */
+/* =========================
+   SEÇÃO DE INTRODUÇÃO
+   ========================= */
+.servicos-intro {
+  padding: 60px 20px 20px 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
+.servicos-intro h2 {
+  font-size: 2.5rem;
+  color: var(--cor-018);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
+.servicos-intro p {
+  font-size: 1rem;
+  color: var(--cor-017);
+}
+
+/* =========================
+   GRID DE SERVIÇOS
+   ========================= */
+.servicos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 1rem;
+  border: 1px solid black;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* =========================
+   CARTÕES INDIVIDUAIS
+   ========================= */
+.servico-card,
+.servico-categoria {
+  flex: 1 1 300px;
+  max-width: 100%;
+  background-color: var(--cor-011);
+  border: 1px solid green;
+  padding: 1rem;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+/* IMAGEM COM CONTROLE */
+.imagem-wrapper {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.imagem-wrapper picture,
+.imagem-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.imagem-wrapper picture {
+  margin-bottom: 1rem;
+}
+
+.servico-card img {
+  max-width: 100%;
+  border: 1px solid blue;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+/* TEXTOS E LISTAS */
+.servico-card h3,
+.servico-categoria h3 {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: var(--cor-018);
+}
+
+.servico-card p,
+.servico-categoria ul {
+  font-size: 1rem;
+  color: var(--cor-017);
+}
+
+.servico-categoria ul li,
+.servico-card ul li {
+  margin-bottom: 0.5rem;
+}
+
+.btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* cards */
+.planos-container {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.planos-container h2 {
+  font-size: 2rem;
+  color: var(--cor-018);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.planos-container p {
+  font-size: 1rem;
+  color: var(--cor-017);
+  margin-bottom: 40px;
+}
+
+/* Área que distribui os cards */
+.planos-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+/* Card de cada plano */
+.planos-container {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.planos-container h2 {
+  font-size: 2rem;
+  color: var(--cor-018);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.planos-container p {
+  font-size: 1rem;
+  color: var(--cor-017);
+  margin-bottom: 40px;
+}
+
+/* Container flexível dos cards */
+.planos-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Estilo visual dos cards */
+.plano-card {
+  flex: 1 1 240px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--cor-011);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  text-align: left;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efeito moderno no hover */
+.plano-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+}
+
+/* Conteúdo interno */
+.plano-card h3 {
+  font-size: 1.3rem;
+  color: var(--cor-018);
+  margin-bottom: 0.5rem;
+}
+
+.plano-card .preco {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--cor-017);
+  margin-bottom: 1rem;
+}
+
+.plano-card ul {
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.plano-card ul li {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  color: var(--cor-017);
+}
+
+/* Botão estilizado */
+.plano-card .btn {
+  background-color: var(--cor-018);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Card especial em destaque */
+.plano-card.destaque {
+  border: 2px solid #3fdad2;
+  background-color: var(--cor-011);
+  box-shadow: 0 0 18px rgba(32, 178, 170, 0.4);
+}
+
+/* Depoimentos */
+.depoimentos {
+  border-radius: 8px;
+  text-align: center;
+}
+
+.depoimentos h2 {
+  font-size: 2rem;
+  color: var(--cor-018);
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.depoimento {
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+}
+
+.depoimento p {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: var(--cor-017);
+}
+
+.depoimento cite {
+  font-size: 0.95rem;
+  color: var(--cor-017);
+  display: block;
+}
+
+
+
+/* Fim página serviços */
 
 /* Sobre */
 .sobre-empresa {
@@ -431,7 +692,7 @@ footer .redes-sociais a {
 }
 
 .valor-item {
-  background-color: var(--cor-012);
+  background-color: var(--cor-011);
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.06);
   padding: 24px;
@@ -549,6 +810,7 @@ footer .redes-sociais a {
   border-radius: 8px;
   box-shadow: 0 8px 24px rgba(0,0,0,0.05);
   margin-bottom: 32px;
+  cursor: pointer;
 }
 
 /* Indicadores */
@@ -576,6 +838,8 @@ footer .redes-sociais a {
   font-size: 14px;
   color: var(--cor-017);
 }
+
+/* Fim página sobre */
 
 /* Contato - seção ajuda-container */
 .ajuda-container {
@@ -617,6 +881,7 @@ footer .redes-sociais a {
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  cursor: pointer;
 }
 
 /* Contato - Atendimento Detalhado */
@@ -839,7 +1104,9 @@ footer .redes-sociais a {
   width: 100%;
   max-width: 980px;
   height: auto;
-  margin-bottom: 5px;}
+  margin-bottom: 5px;
+  cursor: pointer;
+}
 
 .equipe-contato p {
   font-size: 1.125rem;
@@ -847,6 +1114,9 @@ footer .redes-sociais a {
   color: var(--cor-017);
   padding-bottom: 10px;
 }
+
+/* Fim página contato */
+
 
 /* Todas as páginas - Botão Flutuante Contato */
 .flutuante-container {
