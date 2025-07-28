@@ -30,7 +30,7 @@ pointers.forEach((pointer, index) => {
 });
 
 // Função para ampliar as imagens
-document.querySelectorAll('.galeria-estrutura img, .equipe-contato img, .ajuda-container img, .empresa-destaque img, .servico-card img').forEach(img => {
+document.querySelectorAll('.galeria-estrutura img, .equipe-contato img, .ajuda-container img, .empresa-destaque img, .servico-card img, .servicos-grid img').forEach(img => {
   img.addEventListener('click', () => {
     // Criar o overlay
     const overlay = document.createElement('div');

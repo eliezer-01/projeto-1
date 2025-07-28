@@ -251,24 +251,22 @@ footer .redes-sociais a {
 }
 
 /* Serviços */
-/* =========================
-   SEÇÃO DE INTRODUÇÃO
-   ========================= */
+
+/* Introdução - alinhamento de textos */
 .servicos-intro {
   padding: 60px 20px 20px 20px;
-  text-align: center;
+  text-align: start;
   display: flex;
   flex-direction: column;
-  flex-shrink: 1;
+  width: 100%;
 }
 
 .servicos-intro h2 {
   font-size: 2.5rem;
   color: var(--cor-018);
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  text-align: left;
 }
 
 .servicos-intro p {
@@ -276,41 +274,46 @@ footer .redes-sociais a {
   color: var(--cor-017);
 }
 
-/* =========================
-   GRID DE SERVIÇOS
-   ========================= */
+/* Cards de Serviços */
 .servicos-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 1rem;
   padding: 1rem;
-  border: 1px solid black;
   justify-content: space-between;
-  box-sizing: border-box;
 }
 
-/* =========================
-   CARTÕES INDIVIDUAIS
-   ========================= */
+
+/* Cards de Serviços */
+.servicos-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  justify-content: space-between;
+}
+
+/* Estilo dos cards */
 .servico-card,
 .servico-categoria {
-  flex: 1 1 300px;
-  max-width: 100%;
   background-color: var(--cor-011);
-  border: 1px solid green;
   padding: 1rem;
-  box-sizing: border-box;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
-/* IMAGEM COM CONTROLE */
+/* Envolvendo a imagem */
 .imagem-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  max-width: 100%;
   overflow: hidden;
   border-radius: 6px;
+  cursor: pointer;
 }
 
+/* Imagens dentro do wrapper */
 .imagem-wrapper picture,
 .imagem-wrapper img {
   width: 100%;
@@ -319,16 +322,6 @@ footer .redes-sociais a {
   object-fit: cover;
 }
 
-.imagem-wrapper picture {
-  margin-bottom: 1rem;
-}
-
-.servico-card img {
-  max-width: 100%;
-  border: 1px solid blue;
-  cursor: pointer;
-  border-radius: 6px;
-}
 
 /* TEXTOS E LISTAS */
 .servico-card h3,
@@ -344,18 +337,35 @@ footer .redes-sociais a {
   color: var(--cor-017);
 }
 
+.lista {
+  padding-left: 1.5rem;
+  align-self: start;
+  justify-self: start;
+}
+
 .servico-categoria ul li,
 .servico-card ul li {
+  margin-top: 1rem;
   margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: var(--cor-017);
+}
+
+.servico-categoria li,
+.servico-card li {
+  background-image: url("../images/icons/marca-de-verificacao.png");
+  background-repeat: no-repeat;
+  padding-left: 1.3rem;
+  background-size: 1rem auto;
 }
 
 .btn {
+  font-size: 1.2em;
   margin-top: 1rem;
   padding: 0.5rem 1.2rem;
-  border-radius: 4px;
-  cursor: pointer;
-  text-decoration: none;
 }
+
+/* revisado */
 
 /* cards */
 .planos-container {
@@ -459,9 +469,6 @@ footer .redes-sociais a {
 
 /* Botão estilizado */
 .plano-card .btn {
-  background-color: var(--cor-018);
-  color: white;
-  border: none;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   cursor: pointer;
