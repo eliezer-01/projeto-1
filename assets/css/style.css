@@ -50,6 +50,7 @@ article {
 article {
   height: 92vh;
   padding: 5px;
+  background-color: var(--cor-011);
 }
 
 header, footer {
@@ -190,18 +191,38 @@ button:hover {
 
 /* Index */
 article.intro-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2.4rem;
   background: linear-gradient(
-      rgba(32, 178, 170, 0.9), rgba(32, 178, 170, 0.1)
+      rgba(32, 178, 170, 0.1), rgba(32, 178, 170, 0.1)
     ),
     url('/assets/images/banners/flores-002.jpg') no-repeat center center;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  font-family: ;
 }
 
 .intro-text h1, .intro-text h2 {
   color: var(--cor-011);
   text-align: center;
+  font-family: cursive, sans-serif;
+  border: 1px solid red;
+}
+
+.conteudo {
+  border: 1px solid blue;
+  color: var(--cor-017);
+  text-align: center;
+  padding: 2.4rem;
+}
+
+.conteudo p {
+  color: var(--cor-004);
+  box-shadow: 0px 0px 5px var(--cor-004);
 }
 
 footer p {
