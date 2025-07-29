@@ -40,14 +40,14 @@
         </div>
       </header><!-- Fim Logo e navegação -->
 
-  <main>
+  <main class="container">
     <section class="servicos-intro">
       <h2>Serviços Disponíveis</h2>
       <p>Oferecemos soluções pensadas para proporcionar cuidado, conforto e tranquilidade em todos os momentos importantes.</p>
     </section>
 
-    <section class="servicos-grid">
-      <article class="servico-card">
+    <section class="servicos">
+      <article class="servico-categoria">
         <div class="imagem-wrapper">
           <picture>
             <source media="(min-width: 800px)" srcset="assets/images/banners/equipe-funebre.jpg" />
@@ -57,7 +57,6 @@
         </div>
         <h3>Organização de Cerimônias</h3>
         <p>Serviço completo para momentos de despedida, com atenção aos detalhes e respeito às tradições.</p>
-        <div class="lista">
           <ul>
             <li>Preparação do corpo</li>
             <li>Cerimônia personalizada</li>
@@ -66,8 +65,7 @@
             <li>Recepção personalizada</li>
             <li>Orientação para familiares</li>
           </ul>
-        </div>
-        <a href="contato.html"><button class="btn"> Solicitar serviço</button></a>
+        <a href="contato.html"><button class="btn">Solicitar serviço</button></a>
       </article>
 
       <article class="servico-categoria">
@@ -148,7 +146,7 @@
         </ul>
       </article>
 
-      <article class="servico-card">
+      <article class="servico-categoria">
         <div class="imagem-wrapper">
           <picture>
             <source media="(min-width: 800px)" srcset="assets/images/banners/equipe-funebre.jpg" />
@@ -163,7 +161,7 @@
           <li>Plantão de atendimento</li>
           <li>Consultoria documental</li>
         </ul>
-        <a href="https://wa.me/5548999902670?text=Olá%2C%20gostaria%20de%20falar%20com%20um%20atendente"><button class="btn">Conversar com um atendente</button></a>
+        <a href="https://wa.me/5548999902670?text=Olá%2C%20gostaria%20de%20conhecer%20os%20serviços%20disponiveis"><button class="btn">Conversar com um atendente</button></a>
       </article>
     </section>
 
@@ -208,19 +206,32 @@
     </section>
 
       
-    <section class="depoimentos">
+    <section class="depoimentos-radio">
       <h2>O que nossos clientes dizem</h2>
-      <div class="depoimento">
-        <p>"O atendimento foi excepcional e me ajudou em um momento difícil."</p>
-        <cite>
-          <a href="https://www.facebook.com/post123" target="_blank" rel="noopener"><button class="btn">Cliente Satisfeito via Facebook</button></a>
-        </cite>
-      </div>
-      <div class="depoimento">
-        <p>"Recomendo a todos! Profissionais atenciosos e dedicados."</p>
-        <cite>
+
+      <input type="radio" name="depoimento" id="d1" checked>
+      <input type="radio" name="depoimento" id="d2">
+      <input type="radio" name="depoimento" id="d3">
+
+      <div class="depoimentos-slider">
+        <div class="slide s1">
+          <p>"A equipe foi impecável em cada detalhe."</p>
           <a href="https://www.instagram.com/post456" target="_blank" rel="noopener"><button class="btn">Cliente Feliz via Instagram</button></a>
-        </cite>
+        </div>
+        <div class="slide s2">
+          <p>"Me senti acolhido em um momento difícil. Muito obrigado."</p>
+          <a href="https://www.google.com/search?q=Nome+do+Seu+Negócio&hl=pt-BR#lrd=0x000000000000:0x000000000000,1,,," target="_blank" class="botao-google"><button class="btn">Veja nossas avaliações</button></a>
+        </div>
+        <div class="slide s3">
+          <p>"Profissionalismo e respeito do início ao fim."</p>
+          <a href="https://www.facebook.com/post123" target="_blank" rel="noopener"><button class="btn">Cliente Satisfeito via Facebook</button></a>
+        </div>
+      </div>
+
+      <div class="depoimentos-controles">
+        <label for="d1"></label>
+        <label for="d2"></label>
+        <label for="d3"></label>
       </div>
     </section>
 

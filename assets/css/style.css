@@ -62,6 +62,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 1rem;
 }
 
 h1 {
@@ -203,7 +206,6 @@ article.intro-text {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  font-family: ;
 }
 
 .intro-text h1, .intro-text h2 {
@@ -251,7 +253,6 @@ footer .redes-sociais a {
   margin: 0 10px;
 }
 
-/* Index */
 .contato {
   background-color: var(--cor-012);
   padding: 10px;
@@ -271,59 +272,62 @@ footer .redes-sociais a {
   border: none;
 }
 
-/* Serviços */
+/* Fim Index */
 
-/* Introdução - alinhamento de textos */
+/* Introdução dos serviços */
 .servicos-intro {
-  padding: 60px 20px 20px 20px;
-  text-align: start;
   display: flex;
   flex-direction: column;
+  padding: 60px 20px 20px;
   width: 100%;
+  text-align: start;
 }
 
-.servicos-intro h2 {
-  font-size: 2.5rem;
+.servicos-intro h2, h3 {
+  font-size: 2rem;
   color: var(--cor-018);
   margin-bottom: 10px;
+  padding-top: 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.servicos-intro p {
+.servicos-intro p, .servicos {
   font-size: 1rem;
   color: var(--cor-017);
 }
 
-/* Cards de Serviços */
-.servicos-grid {
+/* Seção principal de serviços */
+.servicos {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
-  justify-content: space-between;
+  padding: 0px 20px 10px 10px;
 }
 
-
-/* Cards de Serviços */
-.servicos-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  padding: 1rem;
-  justify-content: space-between;
-}
-
-/* Estilo dos cards */
-.servico-card,
-.servico-categoria {
+/* Serviço principal */
+.servico {
   background-color: var(--cor-011);
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+/* Categorias de serviço */
+.servico-categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.servico-categoria {
+  background-color: var(--cor-012);
   padding: 1rem;
   border-radius: 6px;
-  box-sizing: border-box;
+  flex: 1 1 300px;
 }
 
-/* Envolvendo a imagem */
+/* Serviços - imagem */
 .imagem-wrapper {
   display: flex;
   align-items: center;
@@ -334,22 +338,12 @@ footer .redes-sociais a {
   cursor: pointer;
 }
 
-/* Imagens dentro do wrapper */
 .imagem-wrapper picture,
 .imagem-wrapper img {
+  display: block;
   width: 100%;
   height: auto;
-  display: block;
   object-fit: cover;
-}
-
-
-/* TEXTOS E LISTAS */
-.servico-card h3,
-.servico-categoria h3 {
-  margin-top: 0.5rem;
-  font-size: 1.5rem;
-  color: var(--cor-018);
 }
 
 .servico-card p,
@@ -358,11 +352,6 @@ footer .redes-sociais a {
   color: var(--cor-017);
 }
 
-.lista {
-  padding-left: 1.5rem;
-  align-self: start;
-  justify-self: start;
-}
 
 .servico-categoria ul li,
 .servico-card ul li {
@@ -386,8 +375,6 @@ footer .redes-sociais a {
   padding: 0.5rem 1.2rem;
 }
 
-/* revisado */
-
 /* cards */
 .planos-container {
   padding: 60px 20px;
@@ -407,43 +394,14 @@ footer .redes-sociais a {
   margin-bottom: 40px;
 }
 
-/* Área que distribui os cards */
 .planos-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
   justify-content: center;
-}
-
-/* Card de cada plano */
-.planos-container {
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.planos-container h2 {
-  font-size: 2rem;
-  color: var(--cor-018);
-  margin-bottom: 10px;
-  text-transform: uppercase;
-}
-
-.planos-container p {
-  font-size: 1rem;
-  color: var(--cor-017);
-  margin-bottom: 40px;
-}
-
-/* Container flexível dos cards */
-.planos-cards {
-  display: flex;
   align-items: center;
-  justify-content: center;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
-/* Estilo visual dos cards */
 .plano-card {
   flex: 1 1 240px;
   width: 100%;
@@ -453,17 +411,16 @@ footer .redes-sociais a {
   padding: 1.5rem;
   box-sizing: border-box;
   text-align: left;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Efeito moderno no hover */
 .plano-card:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
 }
 
-/* Conteúdo interno */
+/* Conteúdo interno dos cards */
 .plano-card h3 {
   font-size: 1.3rem;
   color: var(--cor-018);
@@ -473,7 +430,7 @@ footer .redes-sociais a {
 .plano-card .preco {
   font-size: 1.1rem;
   font-weight: bold;
-  color: var(--cor-017);
+  color: var(--cor-018);
   margin-bottom: 1rem;
 }
 
@@ -483,59 +440,103 @@ footer .redes-sociais a {
 }
 
 .plano-card ul li {
-  margin-bottom: 0.4rem;
   font-size: 0.95rem;
   color: var(--cor-017);
+  margin-bottom: 0.4rem;
 }
 
-/* Botão estilizado */
-.plano-card .btn {
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-}
-
-/* Card especial em destaque */
+/* Card em destaque */
 .plano-card.destaque {
-  border: 2px solid #3fdad2;
-  background-color: var(--cor-011);
+  border: 2px solid var(--cor-020);
   box-shadow: 0 0 18px rgba(32, 178, 170, 0.4);
 }
 
 /* Depoimentos */
-.depoimentos {
-  border-radius: 8px;
+.depoimentos-radio {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
   text-align: center;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-.depoimentos h2 {
-  font-size: 2rem;
+.depoimentos-radio h2 {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
   color: var(--cor-018);
-  margin-bottom: 40px;
   text-transform: uppercase;
 }
 
-.depoimento {
+input[type="radio"] {
+  display: none;
+}
+
+.depoimentos-slider {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 200px;
+  width: 100%;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 8px;
+  box-sizing: border-box;
   background-color: var(--cor-011);
+  border-radius: 8px;
   box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.4s ease;
 }
 
-.depoimento p {
-  font-size: 1.1rem;
+.slide p {
   font-style: italic;
+  font-size: 1rem;
   color: var(--cor-017);
 }
 
-.depoimento cite {
-  font-size: 0.95rem;
-  color: var(--cor-017);
+.slide span {
   display: block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--cor-018);
 }
 
+/* Mostrar slide ativo via radio */
+#d1:checked ~ .depoimentos-slider .s1,
+#d2:checked ~ .depoimentos-slider .s2,
+#d3:checked ~ .depoimentos-slider .s3 {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 1;
+}
 
+/* Botões de controle */
+.depoimentos-controles {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.depoimentos-controles label {
+  width: 12px;
+  height: 12px;
+  background-color: var(--cor-017);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#d1:checked ~ .depoimentos-controles label[for="d1"],
+#d2:checked ~ .depoimentos-controles label[for="d2"],
+#d3:checked ~ .depoimentos-controles label[for="d3"] {
+  background-color: var(--cor-018);
+}
 
 /* Fim página serviços */
 
