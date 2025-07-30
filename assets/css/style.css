@@ -106,7 +106,6 @@ button {
 
 button:hover {
   background-color: var(--cor-003);
-  background-image: url(../images/banners/capa-003.jpg);
 }
 /* FIM Estilos Gerais */
 
@@ -115,7 +114,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
+  height: 8vh;
   padding: 1rem;
 }
 
@@ -194,7 +193,13 @@ button:hover {
 
 /* Index */
 article.intro-capa {
-  background-color: var(--cor-001);
+  flex: 1 0 250px;
+  max-width: 410px;
+  background-color: var(--cor-004);
+  background-image: url(../images/banners/capa-003.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 
 .conteudo {
