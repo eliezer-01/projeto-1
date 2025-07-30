@@ -53,7 +53,7 @@ article {
 }
 
 header, footer {
-  background-color: var(--cor-004);
+  background-color: var(--cor-001);
   color: var(--cor-011);
 }
 
@@ -195,6 +195,7 @@ button:hover {
 article.intro-capa {
   flex: 1 0 250px;
   max-width: 410px;
+  height: 90vh;
   background-color: var(--cor-004);
   background-image: url(../images/banners/capa-003.jpg);
   background-repeat: no-repeat;
