@@ -236,8 +236,6 @@ article.intro-capa {
   font-size: 1.7em;
 }
 
-
-
 .btn-contato {
   padding: 10px 20px;
   border-radius: 5px;
@@ -247,7 +245,7 @@ article.intro-capa {
 }
 
 footer p {
-  font-size: 15px;
+  font-size: 1em;
   padding: 8px;
 }
 
