@@ -227,7 +227,7 @@ article.intro-capa {
   font-size: 1.5em;
 }
 
-.contato {
+.contato-inicial {
   height: 65vh;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
@@ -584,6 +584,7 @@ input[type="radio"] {
   flex-direction: column;
   align-items: center;
   padding: 2rem;
+  background-color: var(--cor-011);
 }
 
 .carrossel-container {
