@@ -1168,7 +1168,7 @@ input[type="radio"] {
 }
 
 .btn-flutuante {
-  background-color: var(--cor-001);
+  background-color: var(--cor-004);
   color: white;
   font-weight: bold;
   padding: 12px 20px;
@@ -1179,7 +1179,7 @@ input[type="radio"] {
 }
 
 .btn-flutuante:hover {
-  background-color: var(--cor-004);
+  background-color: var(--cor-003);
 }
 
 .btn-fechar {
