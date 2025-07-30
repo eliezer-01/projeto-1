@@ -57,15 +57,6 @@ header, footer {
   color: var(--cor-011);
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  padding: 0.5rem;
-}
-
 h1 {
   font-size: 1.3em;
   text-transform: uppercase;
@@ -191,7 +182,7 @@ button:hover {
 }
 /* FIM Navegação */
 
-/* Index */
+/* Inicio Conteudo Principal */
 article.intro-capa {
   flex: 1 0 250px;
   max-width: 410px;
@@ -231,12 +222,18 @@ article.intro-capa {
 }
 
 .contato-inicial {
+  flex-flow: column nowrap;
   height: 65vh;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
 
-.contato h3 {
-  font-size: 1.7em;
+.contato-inicial h1 {
+  font-size: 1.5em;
+}
+
+.contato-inicial p {
+  color: var(--cor-017);
+  margin-top: 1rem;
 }
 
 .btn-contato {
@@ -246,33 +243,25 @@ article.intro-capa {
   font-size: 1em;
   text-align: center;  
 }
+/* Fim Conteudo Principal */
+
+/* Inicio Rodapé */
+footer {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  padding: 1rem;
+}
 
 footer p {
-  font-size: 1em;
-  padding: 8px;
+  text-align: center;
+  font-size: 0.9em;
 }
 
 footer a {
-  color: #fff;
-  text-decoration: none;
+  color: var(--cor-011);
 }
-
-footer a img {
-  width: 24px;
-  height: 24px;
-  margin: 0 10px;
-}
-
-footer .redes-sociais {
-  display: flex;
-  justify-content: space-between;
-  margin: 10px 0;
-}
-
-footer .redes-sociais a {
-  margin: 0 10px;
-}
-/* Fim Index */
+/* Fim Rodapé */
 
 /* Introdução dos serviços */
 .servicos-intro {
