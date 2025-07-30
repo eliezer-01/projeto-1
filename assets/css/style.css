@@ -111,13 +111,12 @@ button:hover {
 
 .logo {
   display: flex;
-  align-items: center;
-  text-transform: uppercase;
-  letter-spacing: 3px;
 }
 
 .logo h1 {
-  font-size: 1.1em;
+  font-size: 1.1em;  
+  text-transform: uppercase;
+  letter-spacing: 3px;
   color: var(--cor-011);
 }
 
@@ -1160,7 +1159,7 @@ input[type="radio"] {
 
 .btn-flutuante {
   background-color: var(--cor-004);
-  color: white;
+  color: var(--cor-011);
   font-weight: bold;
   padding: 12px 20px;
   border-radius: 50px;
@@ -1170,7 +1169,11 @@ input[type="radio"] {
 }
 
 .btn-flutuante:hover {
-  background-color: var(--cor-003);
+  border: 1px solid var(--cor-004);
+  background-color: var(--cor-011);
+  color: var(--cor-004);
+  box-shadow: 0 0px 32px rgba(0,0,0,0.9);
+  transform: translateY(-2px);
 }
 
 .btn-fechar {
