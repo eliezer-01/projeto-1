@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 :root {
-  --cor-001: #008080; /* Azul petróleo */
-  --cor-002: rgb(32, 178, 170); /* Azul petróleo claro */
+  --cor-001: #20b2aa; /* Azul petróleo claro */
+  --cor-002: #008080; /* Azul petróleo */
   --cor-003: #006d77; /* Azul petróleo médio */
   --cor-004: #00575b; /* Azul petróleo escuro */
   --cor-011: #ffffff; /* Branco puro */
@@ -41,20 +41,19 @@ main,
 section,
 article {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
 }
 
 article {
   height: 92vh;
-  padding: 5px;
+  padding: 1rem;
   background-color: var(--cor-011);
 }
 
 header, footer {
-  background-color: var(--cor-003);
+  background-color: var(--cor-004);
   color: var(--cor-011);
 }
 
@@ -193,38 +192,60 @@ button:hover {
 /* FIM Navegação */
 
 /* Index */
-article.intro-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 2.4rem;
+article.intro-capa {
   background: linear-gradient(
       rgba(32, 178, 170, 0.1), rgba(32, 178, 170, 0.1)
     ),
-    url('/assets/images/banners/flores-002.jpg') no-repeat center center;
+    url('/assets/images/banners/capa-003.jpg') no-repeat center center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.intro-text h1, .intro-text h2 {
-  color: var(--cor-011);
-  text-align: center;
-  font-family: cursive, sans-serif;
-  border: 1px solid red;
 }
 
 .conteudo {
-  border: 1px solid blue;
-  color: var(--cor-017);
-  text-align: center;
+  flex: 1 0 250px;
+  max-width: 410px;
   padding: 2.4rem;
+  margin-bottom: 15px;
 }
 
 .conteudo p {
-  color: var(--cor-004);
-  box-shadow: 0px 0px 5px var(--cor-004);
+  text-align: justify;
+  color: var(--cor-017);
+  padding: 0.2rem;
+}
+
+.intro-text {
+  height: 65vh;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.intro-text h1 {
+  font-size: 1.5em;
+}
+
+.contato {
+  height: 65vh;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.contato h3 {
+  font-size: 1.7em;
+}
+
+.contato p {
+  padding: 0.4rem;
+}
+
+.btn-contato {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 250px;
+  text-align: center;
+  align-self: center;
+  border: none;
 }
 
 footer p {
@@ -252,26 +273,6 @@ footer .redes-sociais {
 footer .redes-sociais a {
   margin: 0 10px;
 }
-
-.contato {
-  background-color: var(--cor-012);
-  padding: 10px;
-  border-radius: 5px;
-}
-
-.btn-contato {
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 16px;
-  margin-top: 10px;
-  width: 250px;
-  text-align: center;
-  align-self: center;
-  border: none;
-}
-
 /* Fim Index */
 
 /* Introdução dos serviços */
