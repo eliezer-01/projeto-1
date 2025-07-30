@@ -236,14 +236,13 @@ article.intro-capa {
   font-size: 1.7em;
 }
 
-.contato p {
-  padding: 0.4rem;
-}
+
 
 .btn-contato {
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
+<<<<<<< Updated upstream
   text-decoration: none;
   font-size: 16px;
   margin-top: 10px;
@@ -251,6 +250,10 @@ article.intro-capa {
   text-align: center;
   align-self: center;
   border: none;
+=======
+  font-size: 1em;
+  text-align: center;  
+>>>>>>> Stashed changes
 }
 
 footer p {
