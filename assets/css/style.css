@@ -296,6 +296,14 @@ footer .redes-sociais a {
   color: var(--cor-017);
 }
 
+.servicos-intro cite{
+  font-size: 0.8rem;
+  align-self: flex-start;
+  padding-top: 8px;
+  color: var(--cor-017);
+  font-weight: boldSepultamento;
+}
+
 /* Seção principal de serviços */
 .servicos {
   display: flex;
@@ -1019,7 +1027,9 @@ input[type="radio"] {
 }
 
 .localizacao-texto {
-  padding: 25px 0px 0px 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
   text-align: center;
 }
 
@@ -1062,7 +1072,7 @@ input[type="radio"] {
 /* Contato - canais de comunicação */
 .contato {
   background-color: var(--cor-011);
-  padding: 10px 30px;
+  padding: 10px 25px;
   width: 100%;
 }
 
@@ -1084,6 +1094,8 @@ input[type="radio"] {
 }
 
 .contato li {
+  display: flex;
+  align-items: center;
   margin-bottom: 18px;
   color: var(--cor-017);
   font-size: 1.125rem;
@@ -1098,7 +1110,7 @@ input[type="radio"] {
   color: var(--cor-001);
   text-decoration: none;
   font-weight: 600;
-  padding-left: 15px;
+  padding-left: 8px;
 }
 
 .contato a:hover {
@@ -1109,7 +1121,7 @@ input[type="radio"] {
 .contato span {
   color: var(--cor-001);
   font-weight: bold;
-  padding-left: 15px;
+  padding-left: 8px;
 }
 
 .equipe-contato {
