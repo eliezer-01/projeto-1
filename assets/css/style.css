@@ -193,10 +193,7 @@ button:hover {
 
 /* Index */
 article.intro-capa {
-  background: linear-gradient(
-      rgba(32, 178, 170, 0.1), rgba(32, 178, 170, 0.1)
-    ),
-    url('/assets/images/banners/capa-003.jpg') no-repeat center center;
+  background: url('/assets/images/banners/capa-003.jpg') no-repeat center center;
   background-size: cover;
 }
 
