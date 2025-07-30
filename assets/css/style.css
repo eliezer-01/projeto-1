@@ -1088,7 +1088,7 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   margin-bottom: 18px;
-  color: var(--cor-017);
+  color: var(--cor-004);
   font-size: 1.125rem;
 }
 
@@ -1098,7 +1098,7 @@ input[type="radio"] {
 }
 
 .contato a {
-  color: var(--cor-001);
+  color: var(--cor-004);
   text-decoration: none;
   font-weight: 600;
   padding-left: 8px;
@@ -1110,7 +1110,7 @@ input[type="radio"] {
 }
 
 .contato span {
-  color: var(--cor-001);
+  color: var(--cor-004);
   font-weight: bold;
   padding-left: 8px;
 }
