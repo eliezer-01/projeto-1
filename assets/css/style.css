@@ -193,7 +193,7 @@ button:hover {
 
 /* Index */
 article.intro-capa {
-  background: url('/assets/images/banners/capa-003.jpg') no-repeat center center;
+  background-image: url('/assets/images/banners/capa-003.jpg') no-repeat center center;
   background-size: cover;
 }
 
