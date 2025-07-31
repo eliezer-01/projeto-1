@@ -1083,6 +1083,7 @@ input[type="radio"] {
   align-items: center;
   margin-bottom: 18px;
   color: var(--cor-004);
+  color: var(--cor-004);
   font-size: 1.125rem;
 }
 
@@ -1101,6 +1102,12 @@ input[type="radio"] {
 .contato a:hover {
   text-decoration: underline;
   color: var(--cor-018);
+}
+
+.contato span {
+  color: var(--cor-001);
+  font-weight: bold;
+  padding-left: 8px;
 }
 
 .equipe-contato {
