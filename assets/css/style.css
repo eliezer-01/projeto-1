@@ -309,19 +309,16 @@ footer a {
 }
 
 /* Categorias de serviço */
-.servico-categorias {
+.servico-categoria {
   display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-  margin-top: 2rem;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-012);
+  margin: 1rem;
+  border-radius: 6px;
+  flex: 1 1 280px;
 }
 
-.servico-categoria {
-  background-color: var(--cor-012);
-  padding: 1rem;
-  border-radius: 6px;
-  flex: 1 1 300px;
-}
 
 /* Serviços - imagem */
 .imagem-wrapper {
@@ -338,7 +335,7 @@ footer a {
 .imagem-wrapper img {
   display: block;
   width: 100%;
-  height: auto;
+  height: 280px;
   object-fit: cover;
 }
 
@@ -368,7 +365,7 @@ footer a {
 .btn {
   font-size: 1.2em;
   margin-top: 1rem;
-  padding: 0.5rem 1.2rem;
+  padding: 0.5rem;
 }
 
 /* cards */
@@ -409,7 +406,6 @@ footer a {
   padding: 1.5rem;
   box-sizing: border-box;
   text-align: left;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -433,15 +429,13 @@ footer a {
 }
 
 .plano-card ul {
-  margin-bottom: 1rem;
-  padding-left: 1rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--cor-017);
+  gap: 0.4rem;
 }
 
-.plano-card ul li {
-  font-size: 0.95rem;
-  color: var(--cor-017);
-  margin-bottom: 0.4rem;
-}
 
 /* Card em destaque */
 .plano-card.destaque {
@@ -473,7 +467,7 @@ input[type="radio"] {
   display: flex;
   align-items: center;
   position: relative;
-  height: 200px;
+  height: 175px;
   width: 100%;
 }
 
@@ -825,7 +819,7 @@ input[type="radio"] {
 
 .empresa-destaque p {
   max-width: 720px;
-  margin: 0 auto 32px;
+  margin: 0 auto 15px;
   font-size: 15px;
   line-height: 1.6;
   color: var(--cor-017);
@@ -844,17 +838,17 @@ input[type="radio"] {
 
 /* Indicadores */
 .indicadores {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 24px;
-  margin-bottom: 48px;
+  margin: 32px;
 }
 
 .indicador {
   background: var(--cor-011);
   border-radius: 8px;
   padding: 16px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  box-shadow: 0 0 18px rgba(32, 178, 170, 0.4);
 }
 
 .indicador h3 {
@@ -1109,17 +1103,12 @@ input[type="radio"] {
   color: var(--cor-018);
 }
 
-.contato span {
-  color: var(--cor-004);
-  font-weight: bold;
-  padding-left: 8px;
-}
-
 .equipe-contato {
   background-color: var(--cor-011);
   padding: 0px 30px;
   width: 100%;
   height: 100%;
+  padding: 20px;
 }
 
 .equipe-contato h2 {
