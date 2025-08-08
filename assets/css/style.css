@@ -141,7 +141,6 @@ main {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  border: 1px solid red;
   text-align: justify;
   background-color: var(--cor-011);
   border-radius: 5px;
