@@ -138,6 +138,11 @@ main {
 #servicos,
 #planos,
 #contato {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border: 1px solid red;
+  text-align: justify;
   background-color: var(--cor-011);
   border-radius: 5px;
   box-shadow: 0px 0px 15px rgb(225, 225, 225);
@@ -163,6 +168,7 @@ ul {
 
 .plano {
   flex: 1;
+  text-align: center;
   background-color: var(--cor-011);
   border: 1px solid var(--cor-019);
   padding: 20px;
